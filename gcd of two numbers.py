@@ -1,3 +1,4 @@
 def gcd(a, b):
-    a, b = abs(a), abs(b) // make sure values are positive 
-    
+    return a if b == 0 else gcd(b, a % b)
+
+print(gcd(6,8))    
